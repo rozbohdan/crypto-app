@@ -1,0 +1,18 @@
+.checkbox-list {
+  display: grid;
+  margin: 20px 0;
+
+  &.gap-small {
+    grid-gap: 16px;
+  }
+
+  &.m-y-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &.p-y-small {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

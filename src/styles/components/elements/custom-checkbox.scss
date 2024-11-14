@@ -1,0 +1,91 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-grey-extra-light;
+
+  &:last-child {
+    border: none;
+  }
+
+  &.br-none {
+    border: none;
+  }
+
+  &.bg-grey-lighter {
+    background: $background-grey-lighter;
+  }
+
+  &.br-middle {
+    border-radius: $br-middle;
+  }
+
+  &.p-x-small {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &.p-y-small-tiny {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &-input {
+    position: absolute;
+    left: -9999px;
+
+    &:checked + span:after {
+      content: "";
+      background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 12L10 17L20 7' stroke='%232873FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+      min-width: 24px;
+      max-width: 24px;
+      min-height: 24px;
+      max-height: 24px;
+    }
+  }
+
+  &-icon {
+    margin-right: 16px;
+    order: 1;
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+
+    &.middle {
+      min-width: 44px;
+      max-width: 44px;
+      min-height: 44px;
+      max-height: 44px;
+    }
+  }
+
+  &-span {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-16;
+    line-height: $line-height-24;
+    color: $text-dark;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &.with-arrow {
+      &:after {
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.47503 12.8583 8.83336L7.42499 3.40002' stroke='%238E9BAE' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+        min-width: 20px;
+        max-width: 20px;
+        min-height: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+}

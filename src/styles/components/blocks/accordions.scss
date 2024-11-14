@@ -1,0 +1,11 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.accordions {
+  padding: 24px 16px;
+  background: $background-lighter;
+  border-radius: $br-middle;
+  display: grid;
+  grid-gap: 16px;
+}

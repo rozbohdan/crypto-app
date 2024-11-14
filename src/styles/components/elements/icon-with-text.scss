@@ -1,0 +1,121 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.align-start {
+    align-items: flex-start;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    max-height: 24px;
+    margin-right: 8px;
+
+    &.tiny {
+      min-width: 20px;
+      max-width: 20px;
+      min-height: 20px;
+      max-height: 20px;
+    }
+
+    &.small {
+      min-width: 28px;
+      max-width: 28px;
+      min-height: 28px;
+      max-height: 28px;
+    }
+
+    &.middle-extra {
+      min-width: 32px;
+      max-width: 32px;
+      min-height: 32px;
+      max-height: 32px;
+    }
+
+    &.middle {
+      min-width: 35px;
+      max-width: 35px;
+      min-height: 35px;
+      max-height: 35px;
+    }
+
+    &.large {
+      min-width: 40px;
+      max-width: 40px;
+      min-height: 40px;
+      max-height: 40px;
+    }
+
+    &.xxl {
+      min-width: 48px;
+      max-width: 48px;
+      min-height: 48px;
+      max-height: 48px;
+    }
+
+    &.primary-light {
+      background: $background-primary-light;
+    }
+
+    &.lighter-extra-opacity {
+      background: $background-lighter-extra-opacity;
+    }
+
+    &.br-full {
+      border-radius: $br-full;
+    }
+
+    &.br-small {
+      border-radius: $br-small;
+    }
+
+    &.mr-small {
+      margin-right: 16px;
+    }
+
+    &.mr-none {
+      margin-right: 0;
+    }
+
+    &.mb-small {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-text {
+    &.col {
+      display: grid;
+      grid-gap: 4px;
+    }
+
+    &.width-max {
+      width: 100%;
+    }
+
+    &.flex-max {
+      flex: 1;
+    }
+
+    &.flex {
+      display: flex;
+    }
+
+    &.justify-between {
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+//settings
+@import "../../settings/app.settings.style";
+
+.card {
+  padding: 20px;
+  display: grid;
+  grid-gap: 24px;
+  position: relative;
+  font-family: $custom-font;
+
+  &-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $br-middle-tiny;
+  }
+
+  &-top {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-center {
+    z-index: 1;
+    display: flex;
+    gap: 16px;
+  }
+
+  &-bottom {
+    z-index: 1;
+    display: flex;
+    gap: 40px;
+  }
+
+  &-col {
+    display: grid;
+    grid-gap: 7px;
+  }
+}

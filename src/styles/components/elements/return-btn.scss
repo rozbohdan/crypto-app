@@ -1,0 +1,17 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.return-btn {
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  border-radius: $br-middle;
+  background: $background-grey-lighter url("../../assets/images/arrow.svg") no-repeat center;
+
+  &.bg-grey-opacity {
+    background-color: $background-grey-opacity;
+    filter: brightness(0) invert(1);
+  }
+}

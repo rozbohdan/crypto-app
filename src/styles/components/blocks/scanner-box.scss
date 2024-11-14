@@ -1,0 +1,38 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.scanner-box {
+  background-color: transparent;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 180px;
+  max-height: 180px;
+  border: 7px solid;
+  border-image: url("../../assets/images/custom-border.svg") 10;
+  box-shadow: 0 0 0 1000px $background-dark-light;
+  border-radius: $br-middle;
+  margin: auto;
+  position: fixed;
+  top: 144px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  @media screen and (min-width: 300px) {
+    min-width: 271px;
+    max-width: 271px;
+  }
+
+  @media screen and (min-height: 620px) {
+    min-height: 280px;
+    max-height: 280px;
+  }
+
+  @media screen and (min-height: 750px) {
+    top: 50%;
+    min-height: 337px;
+    max-height: 337px;
+    transform: translate(-50%, -50%);
+  }
+}

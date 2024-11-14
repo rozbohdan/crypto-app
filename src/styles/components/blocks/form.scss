@@ -1,0 +1,20 @@
+.form {
+  display: grid;
+  grid-gap: 16px;
+  margin-top: 32px;
+
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+
+    &.four-col {
+      grid-template-columns: repeat(4, 56px);
+      grid-gap: 28px;
+    }
+
+    &.justify-center {
+      justify-content: center;
+    }
+  }
+}

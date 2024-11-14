@@ -1,0 +1,14 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+p {
+  font-size: $font-size-14;
+  line-height: $line-height-20;
+  margin-bottom: 24px;
+  color: $text-grey;
+
+  &.mb-tiny {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+//settings
+@import "../../settings/app.colors.style";
+
+.hr-with-span {
+  height: 1px;
+  width: 100%;
+  background: $background-grey-extra-light;
+  position: relative;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: $background-lighter url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.79194 14.3999L5.89197 17.4999L8.99194 14.3999' stroke='%232873FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.89185 2.5V17.5' stroke='%232873FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat center;
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 43px;
+    max-width: 43px;
+  }
+}

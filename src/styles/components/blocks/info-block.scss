@@ -1,0 +1,15 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.info-block {
+  border-radius: $br-small;
+  padding: 12px 16px;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-14;
+  line-height: $line-height-14;
+
+  &.warning {
+    background: $background-warning;
+  }
+}

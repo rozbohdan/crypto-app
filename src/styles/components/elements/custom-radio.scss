@@ -1,0 +1,32 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+
+  &-input {
+    position: absolute;
+    left: -9999px;
+
+    &:checked + span {
+      border-color: $border-primary;
+    }
+  }
+
+  &-span {
+    background: $background-lighter;
+    border: 1px solid $border-grey-light;
+    border-radius: $br-small-xl;
+    height: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

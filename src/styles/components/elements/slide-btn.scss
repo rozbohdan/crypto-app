@@ -1,0 +1,13 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.slide-btn {
+  min-height: 6px;
+  max-height: 6px;
+  min-width: 48px;
+  max-width: 48px;
+  background: $background-grey-light-100;
+  border-radius: $br-large-extra-xl;
+  margin: 0 auto 24px auto;
+}

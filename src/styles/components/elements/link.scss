@@ -1,0 +1,54 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.link {
+  font-size: $font-size-14;
+  line-height: $line-height-20;
+  color: $text-primary;
+  font-weight: $font-weight-bold;
+
+  &.inherit {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $background-lighter;
+    border-radius: $br-middle;
+    color: $text-dark;
+    padding: 14px 12px;
+    box-shadow: $box-shadow-light;
+
+    &.br-large-extra-bottom {
+      border-radius: $br-large-extra-bottom;
+    }
+
+    &.bg-success-lighter-opacity {
+      background: $background-success-lighter-opacity;
+    }
+  }
+
+  &.text-right {
+    text-align: right;
+  }
+
+  &.text-center {
+    text-align: center;
+  }
+
+  &.mt-tiny {
+    margin-top: 8px;
+  }
+
+  &.semi-bold {
+    font-weight: $font-weight-semi-bold;
+  }
+
+  &-icon {
+    margin-right: 8px;
+  }
+}

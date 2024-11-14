@@ -1,0 +1,39 @@
+.accordion {
+  &-header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    grid-gap: 16px;
+
+    &.two-col {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  &-content-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &.open {
+      max-height: initial;
+    }
+  }
+
+  &-content {
+    padding-top: 32px;
+  }
+
+  &-col {
+    display: grid;
+    grid-gap: 4px;
+  }
+
+  &-icon {
+    transition: 0.3s;
+
+    &.rotate {
+      transform: rotate(-180deg);
+    }
+  }
+}

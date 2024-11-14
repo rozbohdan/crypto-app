@@ -1,0 +1,46 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.input {
+  outline: none;
+  background: $background-lighter;
+  border: 1px solid $border-grey-light;
+  width: 100%;
+  border-radius: $br-middle-extra;
+  height: 56px;
+  padding: 0 16px;
+  font-size: $font-size-14;
+  font-weight: $font-weight-semi-bold;
+  color: $text-dark;
+  transition: border 0.3s;
+
+  &::placeholder {
+    color: $text-grey;
+    font-weight: $font-weight-regular;
+  }
+
+  &:focus {
+    border-color: $border-primary;
+  }
+
+  &[type=password]:not(:placeholder-shown) {
+    font-size: $font-size-30;
+  }
+
+  &.code {
+    text-align: center;
+    font-weight: $font-weight-extra-bold;
+    font-size: $font-size-20;
+  }
+
+  &.large {
+    font-weight: $font-weight-extra-bold;
+    font-size: $font-size-24;
+    height: 72px;
+  }
+
+  &.text-center {
+    text-align: center;
+  }
+}

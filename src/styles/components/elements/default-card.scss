@@ -1,0 +1,154 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.default-card {
+  padding: 16px;
+  background: $background-lighter;
+
+  &.grid {
+    display: grid;
+  }
+
+  &.gap-small {
+    grid-gap: 16px;
+  }
+
+  &.bg-grey-lighter {
+    background: $background-grey-lighter;
+  }
+
+  &.bg-primary {
+    background: $background-primary;
+  }
+
+  &.bg-accent {
+    background: $background-accent;
+  }
+
+  &.active {
+    background: $background-success-lighter;
+  }
+
+  &.action {
+    &:active,
+    &:focus {
+      background: $background-success-lighter;
+    }
+  }
+
+  &.br-large-extra {
+    border-radius: $br-large-extra;
+  }
+
+  &.br-large-extra-top {
+    border-radius: $br-large-extra-top;
+  }
+
+  &.br-middle-tiny {
+    border-radius: $br-middle-tiny;
+  }
+
+  &.br-middle {
+    border-radius: $br-middle;
+  }
+
+  &.p-y-middle {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &.p-x-middle-extra {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.content-justify {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.align-end {
+    align-items: flex-end;
+  }
+
+  &.with-links {
+    position: relative;
+    padding-bottom: 110px;
+
+    @media screen and (min-width: $screen-tin) {
+      padding-bottom: 42px;
+    }
+
+    &.pb-initial {
+      padding-bottom: 42px;
+    }
+  }
+
+  &-image {
+    width: 100%;
+
+    &.middle-height {
+      min-height: 53px;
+      max-height: 53px;
+    }
+
+    &.mt-middle-extra {
+      margin-top: 24px;
+    }
+
+    &.mb-small {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &.justify-between {
+      justify-content: space-between;
+    }
+  }
+
+  &-span {
+    height: 1px;
+    width: 100%;
+    background: $background-grey-extra-light;
+    margin: 8px 0;
+  }
+
+  &-col {
+    display: grid;
+    grid-gap: 8px;
+
+    &.gap-none {
+      grid-gap: 0;
+    }
+  }
+
+  &-links {
+    display: grid;
+    grid-gap: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+
+    @media screen and (min-width: $screen-tin) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &.one-col {
+      grid-template-columns: 1fr;
+    }
+  }
+}

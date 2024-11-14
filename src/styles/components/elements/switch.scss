@@ -1,0 +1,57 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &-span {
+    margin-right: 8px;
+    color: $text-grey;
+    font-size: $font-size-12;
+    line-height: $line-height-18;
+  }
+
+  &-toggle {
+    position: relative;
+    min-width: 40px;
+    max-width: 40px;
+    height: 24px;
+    margin: 0;
+    vertical-align: top;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    background: $background-grey-light;
+    border-radius: $br-large;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-color: $background-lighter;
+      border-radius: $br-full;
+      transform: translateX(0);
+      transition: all 0.5s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    &:checked {
+      background: $background-primary;
+
+      &:after {
+        transform: translateX(calc(100% - 2px));
+        left: initial;
+      }
+    }
+  }
+}

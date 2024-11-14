@@ -1,0 +1,19 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.text-box {
+  padding: 16px 24px;
+  border-radius: $br-middle-tiny;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  &.m-x-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.primary-light {
+    background: $background-primary-light;
+  }
+}

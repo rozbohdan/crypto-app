@@ -1,0 +1,94 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.links {
+  display: grid;
+  grid-gap: 16px;
+
+  &.gap-none {
+    grid-gap: 0;
+  }
+
+  &.two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.flex {
+    display: flex;
+  }
+
+  &.justify-between {
+    justify-content: space-between;
+  }
+
+  &.mb-small {
+    margin-bottom: 16px;
+  }
+
+  &.mb-middle {
+    margin-bottom: 32px;
+  }
+
+  &-item {
+    background: $background-lighter;
+    border-radius: $br-middle-extra;
+    border: 1px solid transparent;
+    padding: 15px 40px 15px 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &.br-bottom {
+      border-bottom: 1px solid $border-grey-extra-light;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &.bg-grey-lighter {
+      background: $background-grey-lighter;
+
+      &:active,
+      &:focus {
+        border-color: $border-grey-light;
+        background: $background-lighter;
+      }
+    }
+
+    &.primary {
+      background-color: $background-primary;
+
+      &:after {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &.padding-x-default {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:after {
+        right: 0;
+      }
+    }
+
+    &.after-none {
+      &:after {
+        content: none;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.94 13.28L10.2867 8.9333C10.8 8.41997 10.8 7.57997 10.2867 7.06664L5.94 2.71997' stroke='%238E9BAE' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+      min-width: 16px;
+      max-width: 16px;
+      min-height: 16px;
+      max-height: 16px;
+    }
+  }
+}

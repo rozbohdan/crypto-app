@@ -1,0 +1,36 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.input-with-select {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border: 1px solid $border-grey-light;
+  border-radius: $br-middle-extra;
+  padding-left: 16px;
+
+  &:focus-within {
+    border-color: $border-primary;
+  }
+
+
+  &-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background: $background-grey-light;
+      padding: 12px 0;
+      margin-left: 16px;
+    }
+  }
+
+  .input-with-select-input {
+    border: none;
+  }
+}

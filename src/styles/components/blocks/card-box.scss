@@ -1,0 +1,13 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.card-box {
+  background: $background-lighter;
+  box-shadow: $box-shadow-primary;
+  border-radius: $br-large-extra;
+  padding: 20px;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+}

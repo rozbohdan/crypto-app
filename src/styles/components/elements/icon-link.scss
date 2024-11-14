@@ -1,0 +1,60 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.icon-link {
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+
+  &.middle {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+  &.bg-grey-lighter {
+    background: $background-grey-lighter;
+  }
+
+  &.br-full {
+    border-radius: $br-full;
+  }
+
+  &.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.home {
+    background: url("../../assets/images/home.svg") no-repeat center;
+    background-size: contain;
+
+    &.active {
+      background: url("../../assets/images/home-primary.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &.search,
+  &.directions {
+    &.active {
+      .icon-link-path {
+        stroke: $background-primary;
+      }
+    }
+  }
+
+  &.category {
+    background: url("../../assets/images/category.svg") no-repeat center;
+    background-size: contain;
+
+    &.active {
+      background: url("../../assets/images/category-primary.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+}

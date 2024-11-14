@@ -1,0 +1,13 @@
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+
+  &.three-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}

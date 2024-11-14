@@ -1,0 +1,65 @@
+//colors
+$dark: #10192d;
+$dark-light: #10192dd6;
+$dark-opacity: rgba(16, 25, 45, 0.25);
+$lighter-extra-opacity: #ffffff24;
+$lighter-opacity: rgba(255, 255, 255, 0.7);
+$lighter: #ffffff;
+$grey-extra-light: #f1f5f9;
+$grey-lighter: #f8fafc;
+$grey-light: #e2e8f0;
+$grey-light-200: #e3e7f7;
+$grey-light-100: #e3e8fc;
+$grey-opacity: rgba(255, 255, 255, 0.25);
+$grey: #8e9bae;
+$grey-dark-light: #e8ecfd;
+$grey-dark: #64748b;
+$primary-light: #f5f9ff;
+$primary: #2873ff;
+$primary-dark: #165cdd;
+$warning: #facc154f;
+$accent: #f2c94c;
+$success: #22c36b;
+$success-lighter: #6fcf9747;
+$success-lighter-opacity: #6fcf9721;
+
+//text
+$text-lighter-opacity: $lighter-opacity;
+$text-lighter: $lighter;
+$text-dark: $dark;
+$text-grey: $grey;
+$text-grey-dark: $grey-dark;
+$text-primary: $primary;
+$text-primary-dark: $primary-dark;
+$text-success: $success;
+
+//background
+$background-dark-light: $dark-light;
+$background-lighter-extra-opacity: $lighter-extra-opacity;
+$background-lighter: $lighter;
+$background-grey-extra-light: $grey-extra-light;
+$background-primary-light: $primary-light;
+$background-primary: $primary;
+$background-grey-lighter: $grey-lighter;
+$background-grey-light: $grey-light;
+$background-grey-light-100: $grey-light-100;
+$background-grey-opacity: $grey-opacity;
+$background-warning: $warning;
+$background-success-lighter: $success-lighter;
+$background-success-lighter-opacity: $success-lighter-opacity;
+$background-accent: $accent;
+$background-success: $success;
+
+//border
+$border-dark-opacity: $dark-opacity;
+$border-grey-extra-light: $grey-extra-light;
+$border-grey-light: $grey-light;
+$border-grey-light-200: $grey-light-200;
+$border-grey-dark-light: $grey-dark-light;
+$border-grey-opacity: $grey-opacity;
+$border-primary: $primary;
+
+//box-shadow
+$box-shadow-primary: 0 27px 20px rgba(0, 0, 0, 0.02);
+$box-shadow-grey: 0 -4px 50px rgba(100, 116, 139, 0.08);
+$box-shadow-light: 0 10px 25px rgba(27, 37, 55, 0.05);

@@ -1,0 +1,13 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.default-card-box {
+  display: flex;
+  flex-direction: column;
+
+  &-bottom {
+    box-shadow: $box-shadow-light;
+    border-radius: $br-large-extra-bottom;
+  }
+}
